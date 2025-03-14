@@ -1,0 +1,806 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shoezy</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!-- google font -->
+    <!-- boxicons -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- boxicons -->
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- swiper -->
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./fontawesome-free-6.3.0-web/css/all.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <nav>
+                <a href="" class="logo">
+                    <h3> <span>Shoezy</span></h3>
+                </a>
+                <ul>
+                    <li><a href="#collection">Home</a></li> <!-- Link to the collection section -->
+
+                    <li><a href="#sneakers">Products</a></li>
+
+                    <li><a href="#contact">Contact Us</a></li>
+                    <li><a href=""><i class="fa fa-search"></i></a></li>
+                    <li><a href=""><i class="fa fa-shopping-bag"></i></a></li>
+                    <li><a href="" class="btn">Sing In</i></a></li>
+                </ul>
+            </nav>
+            <section>
+                <div class="left">
+                    <h2>WELCOME, </h2>
+                    <h15 id="typewriter"> </h15>
+
+                    <script>
+                        const text = "TO SHOEZY";
+                        const typingSpeed = 100; // Speed in milliseconds
+                        const element = document.getElementById("typewriter");
+
+                        let index = 0;
+                        let isTyping = true;
+
+                        function type() {
+                            if (isTyping) {
+                                if (index < text.length) {
+                                    element.innerHTML += text.charAt(index);
+                                    index++;
+                                    setTimeout(type, typingSpeed);
+                                } else {
+                                    isTyping = false; // Switch to erasing mode
+                                    setTimeout(type, 1000); // Wait before starting to erase
+                                }
+                            } else {
+                                if (index > 0) {
+                                    element.innerHTML = text.substring(0, index - 1);
+                                    index--;
+                                    setTimeout(type, typingSpeed);
+                                } else {
+                                    isTyping = true; // Switch back to typing mode
+                                    setTimeout(type, 1000); // Wait before starting to type again
+                                }
+                            }
+                        }
+
+                        // Start typing effect
+                        type();
+                    </script>
+</body>
+
+</html>
+
+</div>
+<div class="right">
+    <div class="bg"></div>
+    <div class="img">
+        <img src="./img.png" alt="">
+    </div>
+</div>
+</section>
+</div>
+</header>
+
+
+<!-- hero slider -->
+<!-- hero slider -->
+<section>
+    <div class="hero">
+        <div class="swiper hero__swiper">
+            <div class="swiper-wrapper">
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="hero__bg bg-image"
+                        style="background-image: url(./assets/bg/lennart-uecker-49bZDF_EgJU-unsplash.jpg);"></div>
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="hero__txt">
+                                <h2>Nike Jordan</h2>
+                                <p>The Nike Jordan sneaker features a sleek black leather upper with bold red accents.The combination of black and red gives it a striking and classic look, ideal for both sports and casual wear. 
+                                    Its white rubber midsole with a red stripe adds contrast, enhancing the shoe's overall aesthetic. Designed with comfort in mind, it includes a padded collar and cushioned insole, making it a great choice for all-day wear.
+                                    Originally inspired by basketball culture.</p>
+                                <button class="btn">go to collection</button>
+                            </div>
+                            <div class="hero__img">
+                                <img src="./assets/products/Nike-Shoes-PNG-Images-HD.png" alt="product image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="hero__bg bg-image"
+                        style="background-image: url(./assets/bg/dulcey-lima-8Tx1FOj8xJc-unsplash.jpg);"></div>
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="hero__txt">
+                                <h2>Nike Max Air</h2>
+                                <p>The Nike Max Air is a lightweight sneaker with a breathable red mesh upper and a white swoosh, featuring Air Max cushioning for superior shock absorption. 
+                                    Its design promotes flexibility and support, making it perfect for both athletic and casual wear.</p>
+                                <button class="btn">go to collection</button>
+                            </div>
+                            <div class="hero__img">
+                                <img src="./assets/products/Nike-Shoes-PNG-Photos.png" alt="product image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="hero__bg bg-image"
+                        style="background-image: url(./assets/bg/sherise-van-dyk-nS3HSEBrcik-unsplash.jpg);"></div>
+                    <div class="container">
+                        <div class="hero__content">
+                            <div class="hero__txt">
+                                <h2>Nike Air 1'07</h2>
+                                <p>vThe Nike Max Air is a lightweight sneaker with a breathable red mesh upper and a white swoosh, featuring Air Max cushioning for superior shock absorption. 
+                                    Its design promotes flexibility and support, making it perfect for both athletic and casual wear.</p>
+                                <button class="btn">go to collection</button>
+                            </div>
+                            <div class="hero__img">
+                                <img src="./assets/products/Nike-Shoes-Jordan-PNG-Pic.png" alt="product image">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+<!-- hero slider -->
+
+
+
+<section class="normal" id="sneakers">
+
+    <h2>Other Collection</h2>
+
+    <div class="card-container">
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle2"
+                    src="https://cdn.fashdirect.com/webadmin/items/website/3462547/pi_var_8_image_2_225561814795_9.jpg"
+                    alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: grey;">White</span> <br> NIKE
+                    <p>₹1900</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-product1"
+                            src="https://t3.ftcdn.net/jpg/06/10/27/02/360_F_610270204_4caPs2ahuPak18PVqDgXU38eb4Wz8Nnu.jpg"
+                            alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle1"
+                    src="https://www.famousfootwear.ca/blob/product-images/21000/70/14/93/701493_right_feed1000.jpg"
+                    alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: red;">RED</span> <br> CANVAS
+                    <p>₹1000</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-product1" src="https://m.media-amazon.com/images/I/71W5tjilXxL._US500_.jpg"
+                            alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle"
+                    src="https://backend.orbitvu.com/sites/default/files/image/sport-shoe-white-background.jpeg"
+                    alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: gold;">GOLD</span> <br> NEW BALANCE
+                    <p>₹1500</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-product1"
+                            src="https://backend.orbitvu.com/sites/default/files/image/product-photo.jpeg"
+                            alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle3"
+                    src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/61d903b6-6241-4f5e-bafd-33d66e7ed4d5/infinityrn-4-gore-tex-waterproof-road-running-shoes-hQ6ScD.png"
+                    alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: black;">BLACK</span> <br> Nike Air
+                    <p>₹2500</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-product2"
+                            src="https://c.ndtvimg.com/2020-02/rieg75rg_mens-sports-shoes_625x300_21_February_20.jpg?downsize=545:307"
+                            alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle2"
+                    src="https://images.novelship.com/product/air_jordan_38_pf__fundamental__dz3355_106_0_29607.octet-stream?fit=fill&bg=FFFFFF&trim=color&q=75&w=1200&h=1200&pad=80&fm=webp&auto=compress"
+                    alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: black;">BLACK</span> <br> Nike Air
+                    <p>₹2500</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-product3"
+                            src="https://image-cdn.hypb.st/https%3A%2F%2Fhypebeast.com%2Fimage%2F2023%2F08%2Fbest-sneaker-releases-august-2023-week-3-air-jordan-38-ganni-new-balance-1906r-rc30-hal-studios-asics-gel-1130-1.png?q=75&w=800&cbr=1&format=png&fit=max"
+                            alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <div class="container-image">
+                <img class="image-circle1" src="./assets/products/na2.png" alt="Shoe Image">
+            </div>
+            <div class="content">
+                <div class="detail">
+                    <span style="color: black;">BLACK</span> <br> Nike Air
+                    <p>₹2500</p>
+                    <button>Buy</button>
+                </div>
+                <div class="product-image">
+                    <div class="box-image">
+                        <img class="img-produc2" src="./image/shoes5.png" alt="Shoe Image">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Add more cards as needed -->
+
+</section>
+<!-- top products -->
+<section>
+    <div class="container">
+        <div class="top-product__header">
+            <h2 class="section__title no-margin">
+                Top pick
+            </h2>
+            <div class="top-product__swiper__btn" id="top-product__swiper__btn">
+                <div class="swiper-button btn-prev">
+                    <i class="bx bx-chevron-left"></i>
+                </div>
+                <div class="swiper-button btn-next">
+                    <i class="bx bx-chevron-right"></i>
+                </div>
+            </div>
+        </div>
+        <div class="swiper top-product__swiper">
+            <div class="swiper-wrapper">
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="product__image">
+                            <img src="./assets/products/Nike-Shoes-PNG-Photos.png" alt="product image">
+                        </div>
+                        <div class="product__info">
+                            <h5 class="product__name">Nike Air</h5>
+                            <span class="product__price">$ 1234.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="product__image">
+                            <img src="./assets/products/Nike-Shoes.png" alt="product image">
+                        </div>
+                        <div class="product__info">
+                            <h5 class="product__name">Nike Air</h5>
+                            <span class="product__price">$ 1234.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="product__image">
+                            <img src="./assets/products/Nike-Shoes-PNG-Images-HD.png" alt="product image">
+                        </div>
+                        <div class="product__info">
+                            <h5 class="product__name">Nike Air</h5>
+                            <span class="product__price">$ 1234.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="product__image">
+                            <img src="./assets/products/Nike-Shoes-PNG-File.png" alt="product image">
+                        </div>
+                        <div class="product__info">
+                            <h5 class="product__name">Nike Air</h5>
+                            <span class="product__price">$ 1234.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+                <!-- slide item -->
+                <div class="swiper-slide">
+                    <div class="product-card">
+                        <div class="product__image">
+                            <img src="./assets/products/Nike-Shoes-PNG-Image.png" alt="product image">
+                        </div>
+                        <div class="product__info">
+                            <h5 class="product__name">Nike Air</h5>
+                            <span class="product__price">$ 1234.5</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- slide item -->
+            </div>
+        </div>
+    </div>
+</section>
+<!-- top products -->
+
+<!-- category banner -->
+<section>
+    <div class="container">
+        <h2 class="section__title">trending now</h2>
+        <div class="category__grid">
+            <!-- item -->
+            <div class="category__item category__top">
+                <div class="category__banner bg-image" style="background-image: url(./assets/products/a1\ \(1\).jpg);">
+                </div>
+                <div class="category__overlay"></div>
+                <div class="category__border"></div>
+                <div class="category__txt">Nike Jordan</div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="category__item category__left">
+                <div class="category__banner bg-image" style="background-image: url(./assets/products/a1\ \(2\).jpg);">
+                </div>
+                <div class="category__overlay"></div>
+                <div class="category__border"></div>
+                <div class="category__txt">Nike Jordan</div>
+            </div>
+            <!-- item -->
+            <!-- item -->
+            <div class="category__item category__right">
+                <div class="category__banner bg-image" style="background-image: url(./assets/products/a1\ \(3\).jpg);">
+                </div>
+                <div class="category__overlay"></div>
+                <div class="category__border"></div>
+                <div class="category__txt">Nike Jordan</div>
+            </div>
+            <!-- item -->
+        </div>
+    </div>
+</section>
+<!-- category banner -->
+<section>
+    <div class="container">
+        <div class="hero__content">
+            <div class="hero__txt">
+                <h2>Nike Foam</h2>
+                <p>The Nike Foam sneaker showcases a futuristic and stylish design with a black translucent upper, accented by a bold white swoosh and unique stitched detailing.
+                    The sneaker’s lightweight construction ensures breathability and comfort, making it ideal for both performance and casual wear..</p>
+                <button class="btn">go to collection</button>
+            </div>
+            <div class="hero__img">
+                <img src="./assets/products/Nike-Shoes-PNG-File.png" alt="product image">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- promotion product -->
+<!--About-->
+
+<div class="about" id="About">
+
+    <h1>Web<span>About</span></h1>
+
+    <div class="about_main">
+        <div class="about_image">
+            <div class="about_small_image">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4fd2bf2-9175-4dc6-bdd7-7ef8fc6660e9/NIKE+AIR+MAX+PLUS.png"
+                    onclick="functio(this)">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d292af3e-e340-4788-bc22-d17d7ad833be/NIKE+AIR+MAX+PLUS.png"
+                    onclick="functio(this)">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/533e642e-c615-4446-a8a5-5e689fae180e/NIKE+AIR+MAX+PLUS.png"
+                    onclick="functio(this)">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1f0d1c1f-331a-4124-8f99-9d3931b5e47f/NIKE+AIR+MAX+PLUS.png"
+                    onclick="functio(this)">
+            </div>
+
+            <div class="image_contaner">
+                <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/a4fd2bf2-9175-4dc6-bdd7-7ef8fc6660e9/NIKE+AIR+MAX+PLUS.png"
+                    id="imagebox">
+            </div>
+
+        </div>
+
+        <div class="about_text">
+            <p>
+                I am designing a sleek, visually striking interface that showcases Nike’s premier sneaker collections.
+                This project prioritizes seamless navigation, modern aesthetics, and interactive elements to deliver an engaging user experience. 
+                With dynamic filtering and a fully responsive layout, it brings Nike’s iconic footwear to life, reflecting the brand’s legacy of innovation and style.
+            </p>
+        </div>
+
+    </div>
+
+    <a href="#" class="about_btn">Shop Now</a>
+
+    <script>
+        function functio(small) {
+            var full = document.getElementById("imagebox")
+            full.src = small.src
+        }
+    </script>
+
+</div>
+
+<!--Review-->
+
+<div class="review" id="Review">
+    <h1>Customer's<span>review</span></h1>
+
+    <div class="review_box">
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/girl_dp1.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>Mokshda Dubey</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+
+                </div>l
+            </div>
+            <div class="comment">
+                <p>
+                    The plastic bottom has a bit of a blue tint to it but the shoe is good otherwise. Came clean and
+                    is very comfortable. It appears strong and fits great. Got it at a reduced price so definitely
+                    worth it. I could walk around in it all day!
+                </p>
+            </div>
+        </div>
+
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/man_dp1.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>prajjwal pandey</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="comment">
+                <p>
+                    Love the color, the comfort, the support and most of all that they are super light. Like walking
+                    on air. More than happy with this purchase.
+                </p>
+            </div>
+        </div>
+
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/man_dp2.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>Rahul sharma</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="comment">
+                <p>
+                    I was disappointed by how plain these shoes were. Very dull. No luster at all. And on the sides
+                    of the shoes, I could see glue. For being expensive Nike brand shoes, the quality was less than
+                    desirable. I sent them back as soon as I looked at them
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="review_box">
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/gir_dp3.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>Shruti patel</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                            <i class="fa-regular fa-star"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="comment">
+                <p>
+                    I love these shoes! They are comfy and true to size!!! They wash up great. Great value!
+                </p>
+            </div>
+        </div>
+
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/gir_dp2.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>Riyansha sharma</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="comment">
+                <p>
+                    I received compliments on these from the first time I put them on. I really love how they look.
+                    They feel slightly a little too tight so I alternate between these and a wider pair of new
+                    balance
+                </p>
+            </div>
+        </div>
+
+        <div class="review_card">
+            <div class="card_top">
+                <div class="profile">
+
+                    <div class="profile_image">
+                        <img src="image/man_dp3.jpg">
+                    </div>
+
+                    <div class="name">
+                        <strong>Rajarshi Dubey</strong>
+
+                        <div class="like">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star-half-stroke"></i>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="comment">
+                <p>
+                    They are so comfortable for only having them on for the first day. Seems to be a good quality
+                    value for the money. I waited so long bc they were expensive (to me) but it’s definitely worth
+                    it!
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+</div>
+
+
+
+<!--Login Form-->
+
+<div class="login_form">
+    <div class="left">
+        <img src="image/shoes4.png">
+    </div>
+
+    <div class="right">
+        <h1>Welcome Back!</h1>
+
+        <form action="#" method="post">
+            <p>User Name</p>
+            <div class="user">
+                <i class="fa-solid fa-user"></i>
+                <input type="text" name="user" placeholder="User Name" class="username">
+            </div>
+
+            <p class="passworg_tag">Password</p>
+            <div class="password">
+                <i class="fa-solid fa-lock"></i>
+                <input type="text" name="password" placeholder="Password">
+            </div>
+
+            <p class="forget">Forget Password ?</p>
+
+            <button type="submit">Login</button>
+            <div class="loging_icon">
+                <a href="#"><img src="image/google.png"></a>
+                <a href="#"><img src="image/facebook.png"></a>
+                <a href="#"><img src="image/twitter.png"></a>
+            </div>
+
+        </form>
+
+    </div>
+
+</div>
+
+
+
+<!--Footer-->
+
+<footer>
+    <div class="footer_main">
+        <div class="tag">
+            <h1>Contact</h1>
+            <a href="#"><i class="fa-solid fa-house"></i>567001/Bangalore/JP Nagar</a>
+            <a href="#"><i class="fa-solid fa-phone"></i>+91 xxxxxxxx89</a>
+            <a href="#"><i class="fa-solid fa-envelope"></i>@email.com</a>
+        </div>
+
+        <div class="tag">
+            <h1>Get Help</h1>
+            <a href="#" class="center">FAQ</a>
+            <a href="#" class="center">Shipping</a>
+            <a href="#" class="center">Returns</a>
+            <a href="#" class="center">Payment Options</a>
+        </div>
+
+        <div class="tag">
+            <h1>Our Stores</h1>
+            <a href="#" class="center">Sri Lanka</a>
+            <a href="#" class="center">USA</a>
+            <a href="#" class="center">India</a>
+            <a href="#" class="center">Japan</a>
+        </div>
+
+        <div class="tag">
+            <h1>Follow Us</h1>
+            <div class="social_link">
+                <a href="#"><img src="image/twitter.png"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><img src="image/facebook.png"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><img src="image/twitter.png"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><img src="image/twitter.png"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <div class="tag">
+            <h1>Newsletter</h1>
+            <div class="search_bar">
+                <input type="text" placeholder="  @email">
+                <button type="submit">Subscribe</button>
+            </div>
+        </div>
+
+    </div>
+</footer>
+
+<!-- swiper -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+    const swiper = new Swiper('.hero__swiper', {
+        loop: true, // Enable looping
+        autoplay: {
+            delay: 1190, // Delay between slides in milliseconds
+            disableOnInteraction: false, // Continue autoplay after user interactions
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true, // Allow pagination bullets to be clickable
+        },
+
+    });
+
+</script>
+<!-- swiper -->
+<script src="./app.js"></script>
+
+</body>
+
+</html>
